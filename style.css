@@ -6,32 +6,70 @@ body {
 
 h1 {
     text-align: center;
+    margin-bottom: 30px;
+}
+.top-panel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 #cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
+    justify-content: center;
     gap: 20px;
 }
 
-.card{
+.card {
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 260px;
+    border-radius: 15px;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-.card img{
-    width: 100%;
-    border-radius: 10px;
+.card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.card h2 {
+    margin: 10px 0;
 }
 
-.card h2{
-    margin-top: 10px;
-}
-.card p{
+.card p {
     margin: 5px 0;
+    color: #555;
+}
+
+.delete-btn {
+    margin-top: 15px;
+    background-color: crimson;
 }
